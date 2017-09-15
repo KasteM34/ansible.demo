@@ -1,0 +1,6 @@
+---
+
+- name: Install our web packages.
+  yum: name={{item.name}} state=installed enablerepo=epel
+  with_items:
+    - "{{ web_packages }}"

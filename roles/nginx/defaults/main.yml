@@ -1,0 +1,5 @@
+---
+
+#Packages
+web_packages:
+  - name: nginx

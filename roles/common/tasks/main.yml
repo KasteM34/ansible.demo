@@ -1,0 +1,6 @@
+---
+
+- name: Install the base list of packages.
+  yum: name={{item.name}} state=installed enablerepo=epel
+  with_items:
+    - "{{ base_packages }}"

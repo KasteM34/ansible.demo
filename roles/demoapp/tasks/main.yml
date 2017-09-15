@@ -1,0 +1,8 @@
+---
+
+- name: deploy our demo app
+  git:
+    repo: 'https://github.com/themaxsandelin/todo.git'
+    dest: /usr/share/nginx/html/demoapp
+
+

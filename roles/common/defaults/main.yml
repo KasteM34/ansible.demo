@@ -1,0 +1,7 @@
+#Packages
+base_packages:
+  - name: git
+  - name: unzip
+  - name: vim
+  - name: htop
+  - name: wget

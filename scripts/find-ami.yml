@@ -1,0 +1,17 @@
+---
+- name: gathers facts from AMI
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Get the info from an AMI
+      ec2_ami_find:
+        #name: "amzn-ami-hvm-*-gp2"
+        #owner: 137112412989
+        ami_id: "ami-ebd02392"
+        region: eu-west-1
+        sort: creationDate
+        sort_order: descending
+        sort_end: 1
+      register: ami_find
+
+    - debug: var=ami_find
